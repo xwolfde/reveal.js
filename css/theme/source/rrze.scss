@@ -1,0 +1,81 @@
+/**
+ * RRZE Slide Style
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #003366;
+$headingColor: #003366;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Arial, sans-serif;
+$headingFont: 'Source Sans Pro', Arial, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #272822; // #2a76dd;
+$linkColorHover: darken( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+      background: 
+	url(../../lib/img/fau-logo.png) 20px calc(100% - 25px) no-repeat, 
+	url(../../lib/img/rrze-logo.png) 220px calc(100% - 20px) no-repeat, 
+	url(../../lib/img/background-rrze-slides.png) 20px calc(100% + 755px) repeat-x, 
+	linear-gradient(to bottom, white 0%, white calc(100% - 90px), #003366 calc(100% - 90px), #003366);
+      
+   
+    .slides {
+	padding-bottom: 80px;
+	
+    }
+    
+    h1, h2, h3, p {
+//	color: #003366;
+    }
+    .slide-number  {
+	right: 20px;
+	bottom: 24px;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	opacity: 0.9;
+	background: transparent;
+    }
+    
+    section  {
+	a:hover, a:focus {
+	    text-decoration: underline;
+	    text-decoration-color: #EA215A;
+	    text-decoration-thickness: .125em;
+	    text-underline-offset: 1.5px;
+	}
+    }
+}
