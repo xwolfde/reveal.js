@@ -271,7 +271,7 @@ body {
     background-color: #fff; } }
 
 .reveal {
-  background: url(../../lib/img/fau-logo.png) 40px calc(100% - 25px) no-repeat, url(../../lib/img/rrze-logo.png) 240px calc(100% - 20px) no-repeat, url(../../lib/img/background-rrze-slides.png) 20px calc(100% + 755px) repeat-x, linear-gradient(to bottom, white 0%, white calc(100% - 90px), #003366 calc(100% - 90px), #003366); }
+  background: url(../../lib/img/fau-logo.png) 50px calc(100% - 25px) no-repeat, url(../../lib/img/rrze-logo.png) 250px calc(100% - 20px) no-repeat, url(../../lib/img/background-rrze-slides.png) 20px calc(100% + 755px) repeat-x, linear-gradient(to bottom, white 0%, white calc(100% - 90px), #003366 calc(100% - 90px), #003366); }
   .reveal .slides {
     padding-bottom: 80px; }
   .reveal .slide-number {
@@ -303,7 +303,7 @@ body {
 
 #footer-name {
   position: absolute;
-  bottom: 24px;
+  bottom: 29px;
   left: 420px;
   color: #fff;
   font-size: 24px;
