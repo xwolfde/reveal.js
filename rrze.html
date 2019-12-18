@@ -36,7 +36,7 @@
 	</head>
 
 	<body>
-
+		
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -401,7 +401,7 @@ Reveal.addEventListener( 'customevent', function() {
 
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: false,
+				controls: true,
 				progress: true,
 				center: true,
 				hash: true,
@@ -420,6 +420,25 @@ Reveal.addEventListener( 'customevent', function() {
 			});
 
 		</script>
-
+		<div id="branding" style="display:none;">
+		    <div id="branding-content">
+			<div id="header-left"></div>
+			<div id="header-right"></div>
+			<div id="footer-name">Wolfgang Wiese</div>
+		    </div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+		    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+		    var header = $('#branding-content').html();
+		    if ( window.location.search.match( /print-pdf/gi ) ) {
+			Reveal.addEventListener( 'ready', function( event ) {
+			    $('.slide-background').append(header);
+			});
+		    }
+		    else {
+			$('div.reveal').append(header);
+		   }
+		</script>
 	</body>
 </html>
