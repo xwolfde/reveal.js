@@ -275,13 +275,20 @@ body {
   .reveal .slides {
     padding-bottom: 80px; }
   .reveal .slide-number {
-    right: 40px;
-    bottom: 24px;
-    font-size: 24px;
+    right: 10px;
+    bottom: 85px;
+    font-size: 16px;
     font-family: Arial, sans-serif;
     font-weight: 200;
     opacity: 0.9;
-    background: transparent; }
+    background: transparent;
+    color: #272822; }
+    @media (min-width: 480px) {
+      .reveal .slide-number {
+        right: 40px;
+        bottom: 24px;
+        color: #fff;
+        font-size: 24px; } }
   .reveal section a:hover, .reveal section a:focus {
     text-decoration: underline;
     text-decoration-color: #EA215A;
@@ -290,6 +297,9 @@ body {
   .reveal .controls {
     bottom: 100px;
     right: 40px; }
+  .reveal .progress {
+    color: #285684;
+    opacity: 0.9; }
 
 #header-left {
   position: absolute;
@@ -303,11 +313,18 @@ body {
 
 #footer-name {
   position: absolute;
-  bottom: 29px;
-  left: 420px;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 200;
-  font-family: Arial, sans-serif;
-  opacity: 0.9;
-  background: transparent; }
+  bottom: 90px;
+  left: 10px;
+  font-size: 16px;
+  color: #272822;
+  opacity: 0.9; }
+  @media (min-width: 480px) {
+    #footer-name {
+      position: absolute;
+      bottom: 29px;
+      left: 420px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 200;
+      font-family: Arial, sans-serif;
+      background: transparent; } }

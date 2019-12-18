@@ -62,13 +62,20 @@ section.has-dark-background {
 //	color: #003366;
     }
     .slide-number  {
-	right: 40px;
-	bottom: 24px;
-	font-size: 24px;
+	right: 10px;
+	bottom: 85px;
+	font-size: 16px;
 	font-family: Arial, sans-serif;
 	font-weight: 200;
 	opacity: 0.9;
 	background: transparent;
+	color: $linkColor;
+	@media (min-width: 480px) {
+	    right: 40px;
+	    bottom: 24px;
+	    color: #fff;
+	    font-size: 24px;
+	}
     }
     
     section  {
@@ -82,6 +89,10 @@ section.has-dark-background {
     .controls {
 	bottom: 100px;
 	right: 40px;
+    }
+    .progress {
+	color: #285684;
+	opacity: 0.9;
     }
 }
 
@@ -98,12 +109,21 @@ section.has-dark-background {
     
 #footer-name{
     position: absolute;
-    bottom: 29px;
-    left: 420px;
-    color: #fff;
+    bottom: 90px;
+    left: 10px;
+    font-size: 16px;
+    color: $linkColor;
+    opacity: 0.9;
+    
+    @media (min-width: 480px) {
+	position: absolute;
+	bottom: 29px;
+	left: 420px;
+	color: #fff;
     	font-size: 24px;
 	font-weight: 200;
 	font-family: Arial, sans-serif;
-	opacity: 0.9;
+	
 	background: transparent;
+    }
 }
