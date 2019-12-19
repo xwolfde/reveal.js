@@ -68,7 +68,7 @@ body .flakes {
      transform-origin: center;
 }
 #keyframes2 {
-     animation: keyframes2linear 5s infinite; 
+     animation: keyframes2 linear 5s infinite; 
      transform-origin: center;
 }
 #keyframes3 {
@@ -147,10 +147,10 @@ body .flakes {
 	top: 0px;
     }
     10% {
-	top: 300px;
+	top: 400px;
     }
     90% {
-	top: 350px;
+	top: 450px;
     }
     100% {
 	top: 900px;
@@ -169,7 +169,7 @@ body .flakes {
 @keyframes keyframes3 {
     0% {
 	top: 0px;
-	opacity: 0.2;
+	opacity: 0.1;
 	
     }
     50% {
@@ -178,7 +178,7 @@ body .flakes {
     }
     100% {
 	top: 1000px;
-	opacity: 0.2;
+	opacity: 0.1;
     }
 }
 
