@@ -291,7 +291,7 @@ body {
         font-size: 24px; } }
   .reveal section a:hover, .reveal section a:focus {
     text-decoration: underline;
-    text-decoration-color: #EA215A;
+    text-decoration-color: #7D0D2D;
     text-decoration-thickness: .125em;
     text-underline-offset: 1.5px; }
   .reveal .controls {
@@ -300,6 +300,38 @@ body {
   .reveal .progress {
     color: #285684;
     opacity: 0.9; }
+  .reveal .iframeinfobox {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 5px 25px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left; }
+    .reveal .iframeinfobox h1, .reveal .iframeinfobox h2, .reveal .iframeinfobox h3, .reveal .iframeinfobox h4, .reveal .iframeinfobox h5, .reveal .iframeinfobox h6 {
+      color: #fff; }
+    .reveal .iframeinfobox a {
+      color: orange; }
+  .reveal .noticecolor,
+  .reveal blockquote, .reveal q {
+    color: #7D0D2D; }
+  .reveal .twocolumns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center; }
+    .reveal .twocolumns .left {
+      order: 1; }
+    .reveal .twocolumns .right {
+      order: 2; }
+    .reveal .twocolumns .item, .reveal .twocolumns .left, .reveal .twocolumns .right {
+      flex-basis: 50%; }
+      .reveal .twocolumns .item pre, .reveal .twocolumns .left pre, .reveal .twocolumns .right pre {
+        width: 100%; }
 
 #header-left {
   position: absolute;

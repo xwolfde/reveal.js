@@ -40,6 +40,7 @@ section.has-dark-background {
 		color: #fff;
 	}
 }
+$noticecolor: #7D0D2D;
 
 // Theme template ------------------------------
 @import "../template/theme";
@@ -81,7 +82,7 @@ section.has-dark-background {
     section  {
 	a:hover, a:focus {
 	    text-decoration: underline;
-	    text-decoration-color: #EA215A;
+	    text-decoration-color: $noticecolor;
 	    text-decoration-thickness: .125em;
 	    text-underline-offset: 1.5px;
 	}
@@ -94,6 +95,55 @@ section.has-dark-background {
 	color: #285684;
 	opacity: 0.9;
     }
+     
+    .iframeinfobox {
+	position: absolute; 
+	width: 40%; 
+	right: 0; 
+	box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); 
+	background-color: rgba(0, 0, 0, 0.9); 
+	color: #fff; 
+	padding: 20px; 
+	font-size: 20px; 
+	text-align: left;
+	
+	h1,h2,h3,h4,h5,h6 {
+	    color: #fff;
+	}
+	a {
+	    color: orange;
+	}
+    }
+    .noticecolor, 
+    blockquote, q {
+	color: $noticecolor;
+    }
+    
+    .twocolumns {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-around;
+	justify-content: space-around;
+	align-items: center;
+	
+	
+	.left {
+	    order: 1;
+	}
+	.right {
+	    order: 2;
+	}
+	
+	.item, .left, .right {
+	    flex-basis: 50%;
+	    pre {
+		width: 100%;
+	    }
+	}
+    }
+    
+    
 }
 
  #header-left {

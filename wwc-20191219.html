@@ -21,6 +21,8 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
 
+		<link rel="stylesheet" href="../wwc-20191219/specials.css" >
+		
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -44,10 +46,7 @@
 				<section>
 					<h2>Webmaster-Weihnachts&shy;campustreffen 2019</h2>
                                         <p>Let it snow</p>
-					<!-- <p>
-                                        <small>Vortrag inspiriert von  Estelle Weyl (Standardista.com, @estellevw)</small>
-					<small>HTML Slides made with reveal.js, created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p> -->
+				
 				</section>
 
 				<section>
@@ -94,7 +93,7 @@ body {
                             </section>
 			
 				<section data-background-iframe="https://youtube.com/embed/bwNV7TAWN3M?autoplay=1&controls=0&showinfo=0&autohide=1" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<div class="iframeinfobox">
 						<h2>Ein Weihnachtslied im Hintergrund</h2>
                                         <p>
                                             Natürlich Autoplay.
@@ -104,7 +103,7 @@ body {
                                         </div>
 				</section>
                                 <section data-background-iframe="https://freepsdfiles.net/graphics/christmas-hat-psd-file" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<div class="iframeinfobox">
 						<h2>Eine Weihnachtsmütze für das Logo</h2>
                                         <p>
                                             Ohne so eine Mütze geht ja gar nichts!
@@ -120,41 +119,599 @@ body {
 				
                             </section>
                           <section data-background-iframe="https://codepen.io/loktar00/full/CHpGo" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<div  class="iframeinfobox" >
 						<h2>Und natürlich Schnee!</h2>
                                         <p>
                                             Interaktiv mit JavaScript und etwas langweilig...
+					    
                                         </p>
+					<p><a href="https://codepen.io/loktar00/full/CHpGo">Codepen-Link</a></p>
 
                                         </div>
 				</section>
                             <section data-background-iframe="https://codepen.io/tmrDevelops/full/PPgjwz" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<div class="iframeinfobox">
 						<h2>Mit Schrift im Hintergrund</h2>
                                         <p>
                                             Und wieder mit JavaScript und wieder nervig...
                                         </p>
+					<p><a href="https://codepen.io/tmrDevelops/full/PPgjwz">Codepen-Link</a></p>
 
                                         </div>
 				</section>
                               <section data-background-iframe="https://schnee-animation.de/" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<div class="iframeinfobox">
 						<h2>Sogar zum kaufen!</h2>
                                                 <p>
                                                     Making snow balls for profit...
                                                 </p>
                                         </div>
 				</section>
-                            
+
+			 <section style="text-align:left">
+                                <h2>Old school</h2>
+				<p>
+				    Man nehme irgend ein GIF oder ein JPG...
+				</p>
+				<q class="fragment">			    
+				     Es skaliert nicht! Die Webseite sieht auf dem Handy blöde aus.				    
+				</q>
+				<p class="fragment">
+				   Ok, dann setzt die Bilder fest als ein Hintergrund.
+				</p>
+				<q class="fragment">			    
+				      Es ist alles statisch... Es schneit nicht.	    
+				</q>
+				<p class="fragment">
+				  Wir machen es mit JavaScript.
+				</p>
+				<q class="fragment">			    
+				     Das ruckelt! Und außerdem ist JavaScript böse.
+				</q>
+                            </section>
                             <section>
                                 <h2>Die Anatomie einer Schneeflocke</h2>
-                                <p>
-                                
-                                </p>
+				<p>
+				    <i class="snowflake circle"></i>  
+				    <i class="snowflake star"></i>  
+				    <i class="snowflake snowflake1"></i> 
+				    <i class="snowflake snowflake2"></i> 
+				    <i class="snowflake snowflake3"></i> 
+				</p>
+				
+                            </section>   
+			  <section>
+                                <h2>SVG ("Scalable Vector Graphics") </h2>
+
+					<ul>
+					    <li>Vektorgrafiken im Web. </li>
+					    <li>Skalierbarkeit ohne Qualitätsverlust</li>
+					    <li>XML basiertes Dateiformat</li>
+					</ul>
+                            </section>       
+			    			    
+			 <section>
+			     <h2>SVG</h2>
+			     <p>
+				 Beispiel: Kreis
+			     </p>
+
+					 <i class="snowflake circle"></i>  
+
+					<pre><code class="hljs html" data-trim data-line-numbers="4,8-11">
+&lt;svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 120 120"&gt;
+    &lt;circle cx="60" cy="60" r="40"/&gt;
+&lt;/svg&gt;                                 
+</code></pre>
+				  
+                            </section>   
+			 <section>   
+			         <h2>SVG (2)</h2>
+			     <p>
+				 Beispiel: Ein einfacher Stern mit Polygon
+			     </p>
+
+					 <i class="snowflake star"></i>  
+
+					<pre><code class="hljs html" data-trim data-line-numbers="4,8-11">
+&lt;svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 166 166"&gt;
+    &lt;polygon 
+	points="83 26.8 65.7 61.8 27.1 67.4 55 94.7 
+		48.5 133.2 83 115 117.5 133.2 111 94.7 
+		138.9 67.4 100.3 61.8 83 26.8 83 26.8"/&gt;
+&lt;/svg&gt;                                 
+</code></pre>	   
                             </section>
-                                
-                                
-                                
+			  <section>   
+			         <h2>SVG (3)</h2>
+			     <p>
+				 Eine Schnellflocke hat <em>nur</em> ein bißchen mehr Punkte...
+			     </p>
+
+					 <i class="snowflake snowflake1"></i>  
+
+					<pre><code class="hljs html" data-trim data-line-numbers="4,8-11">
+&lt;svg 
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    width="50px" height="50px" viewBox="0 0 100 100"&gt;
+    &lt;polygon fill="rgba(58, 103, 171, 0.75)" 
+    points="71.538,62.283 71.574,62.217 74.732,
+	64.914 79.784,66.506 75.758,63.064 71.796, 61.818 71.833,61.752 74.822,62.484 79.008,
+	61.805 74.89,60.795 72.104, 61.246 67.778,58.85 73.158,57.305 72.77,55.955 66.04,
+	57.887 63.581,56.523 67.809,55.311 67.422,53.961 61.845,55.561 59.385,54.197 68.305,
+	51.641 67.919,50.292 57.649, 53.236 51.769,49.978 53.579,48.912 53.579,48.912 57.562,46.566 67.904,49.246 68.256,
+	47.886 59.274,45.558 61.695,44.134 67.354,45.599 67.706,44.24 63.408,43.126 65.831,
+	41.702 72.769,43.498 73.12,42.138 67.54,40.694 71.807,38.184 74.601,38.565 78.69,
+	37.447 74.488,36.874 71.52,37.686 71.481,37.622 75.41,36.272 79.346,32.728 74.336,
+	34.447 71.25,37.228 71.211,37.162 73.362,34.959 74.902,31.011 71.939,34.042 70.916,
+	36.671 66.65,39.182 68.054,33.762 66.695,33.41 64.939,40.188 62.517,41.615 63.621,
+	37.358 62.263,37.004 60.807,42.622 58.383,44.047 60.711,35.065 59.35,34.713 56.673,
+	45.054 50.879,48.465 50.879,46.365 50.879,46.365 50.879,41.74 58.431,34.186 57.438,
+	33.195 50.879,39.756 50.879,36.944 55.01,32.813 54.017,31.821 50.879,34.959 50.879,
+	32.148 55.945,27.081 54.951,26.087 50.879,30.163 50.879,25.214 52.624,22.999 53.734,
+	18.909 51.11,22.238 50.303,25.208 50.228,25.208 51.058,21.139 50.001,15.949 48.941,
+	21.139 49.771,25.208 49.695,25.208 48.888,22.238 46.266,18.909 47.377,22.999 49.121,
+	25.214 49.121,30.163 45.164,26.205 44.171,27.198 49.121,32.148 49.121,34.959 46.013,
+	31.849 45.019,32.842 49.121,36.944 49.121,39.756 42.562,33.195 41.568,34.186 49.121,
+	41.74 49.121,48.511 47.245,47.471 47.244,47.471 43.201,45.23 40.255,34.96 38.906,
+	35.347 41.465,44.268 39.007,42.906 37.395,37.288 36.045,37.675 37.27,41.942 34.81,
+	40.581 32.833,33.691 31.484,34.077 33.073,39.618 28.745,37.219 27.653,34.618 24.613,
+	31.665 26.254,35.573 28.463,37.718 28.426,37.786 25.268,35.086 20.216,33.494 24.241,
+	36.936 28.203,38.183 28.167,38.25 25.177,37.515 20.993,38.195 25.111,39.208 27.896,
+	38.755 32.223,41.153 26.842,42.696 27.229,44.045 33.959,42.114 36.418,43.478 32.191,
+	44.69 32.577,46.039 38.155,44.44 40.614,45.801 31.693,48.361 32.082,49.711 42.351,
+	46.764 48.23,50.023 46.421,51.088 46.421,51.088 42.438,53.434 32.096,50.756 31.743,
+	52.115 40.727,54.439 38.303,55.867 32.646,54.402 32.295,55.762 36.593,56.875 34.169,
+	58.301 27.23,56.504 26.88,57.861 32.459,59.307 28.194,61.818 25.399,61.438 21.311,
+	62.555 25.51,63.127 28.48,62.314 28.518,62.379 24.59,63.73 20.653,67.275 25.663,
+	65.553 28.751,62.773 28.789,62.838 26.638,65.039 25.098,68.99 28.061,65.957 29.085,
+	63.328 33.349,60.82 31.945,66.238 33.305,66.59 35.06,59.811 37.482,58.387 36.379,
+	62.645 37.738,62.996 39.193,57.379 41.616,55.951 39.29,64.936 40.648,65.287 43.327,
+	54.947 49.121,51.537 49.121,53.637 49.121,53.637 49.121,58.26 41.568,65.812 42.562,
+	66.807 49.121,60.246 49.121,63.057 44.991,67.189 45.982,68.182 49.121,65.041 49.121,
+	67.854 44.055,72.92 45.047,73.912 49.121,69.838 49.121,74.785 47.377,77.002 46.266,
+	81.094 48.889,77.762 49.696,74.791 49.771,74.791 48.941,78.863 49.999,84.051 51.059,
+	78.863 50.228,74.791 50.305,74.791 51.112,77.762 53.734,81.094 52.624,77.002 50.879,
+	74.783 50.879,69.838 54.835,73.797 55.829,72.803 50.879,67.854 50.879,65.041 53.988,
+	68.15 54.979,67.158 50.879,63.057 50.879,60.246 57.438,66.807 58.431,65.812 50.879,
+	58.26 50.879,51.49 52.755,52.531 52.755,52.531 56.8,54.77 59.745,65.039 61.094,
+	64.652 58.535,55.734 60.995,57.096 62.606,62.713 63.955,62.326 62.729,58.059 65.189,
+	59.422 67.166,66.311 68.516,65.922 66.928,60.383 71.254,62.783 72.347,65.383 75.387,
+	68.338 73.744,64.428 "&gt;
+    &lt;/polygon&gt;
+
+&lt;/svg&gt;                                 
+</code></pre>	   
+                            </section>   
+<section>
+    <h2>SVG (4)</h2>
+    <p class="noticecolor">Hausaufgabe!</p>
+    <p>Erstellen Sie die Polygone der folgenden Schneeflocken:</p>
+    <p>
+	<i class="snowflake snowflake2"></i> 
+	<i class="snowflake snowflake3"></i> 
+    </p>
+
+    <p>
+	<small> (Lösung auf <a href="https://codepen.io/Elyon/pen/lhqEB">Codepen</a>)		</small>		
+    </p>
+</section>  
+<section>
+    <h2>Animationen</h2>
+    <p>
+	Mit CSS Elemente bewegen.
+    </p>
+    <p>
+	<small>Ganz ohne JavaScript. Ohne ruckeln und zappeln. In jedem modernen Browser.</small>
+    </p>
+</section> 		    
+			    
+<section>
+    <h2>Animationen</h2>
+
+    <div class="twocolumns">
+	<div class="item">
+	     <ul class="noticecolor">
+	<li>@keyframes</li>
+	<li>animation-name</li>
+	<li>animation-duration</li>
+	<li>animation-timing-function</li>
+	<li>animation-iteration-count</li>
+
+    </ul>
+	</div>
+	<div class="item">
+	     <ul class="noticecolor">
+
+	<li>animation-direction</li>
+	<li>animation-play-state</li>
+	<li>animation-delay</li>
+	<li>animation-fill-mode</li>
+	<li>animation (shorthand)</li>
+    </ul>
+	</div>
+    </div>
+</section> 
+<section>
+    <h3>@keyframes</h3>
+    
+
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes1"></i>
+    </div>
+	    
+    <pre><code class="hljs css" data-trim data-line-numbers="4,8-11">
+@keyframes falling {
+
+    from {
+      top: 0px;
+    }
+
+    to {
+      top: 900px;
+    }
+}	
+</code></pre>
+    <p style="text-align: left;"><small>
+Durch die CSS-at-Regel @keyframes kann der Autor die einzelnen Schritte einer CSS-Animationssequenz festlegen, 
+indem er Keyframes (oder Wegpunkte) setzt, die während der Sequenz an bestimmten Punkten erreicht werden. 
+Das ermöglicht eine spezifischere Kontrolle über die Zwischenschritte einer Animationssequenz gegenüber 
+dem Ergebnis einem dem Browser überlassenen, automatisch berechneten Ablauf.
+    </small></p>
+</section> 
+			    <section>
+    <h3>@keyframes</h3>
+    
+
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes1"></i>
+    </div>
+	    
+    <pre><code class="hljs css" data-trim >
+@keyframes keyframes1 {
+
+    0% {
+      top: 0px;
+    }
+
+    100% {
+      top: 700px;
+    }
+}	
+</code></pre>
+    <p style="text-align: left;"><small>
+	    Statt der Schlüsselworte "from" und "to"  kann man auch die Prozentwerte der Strecke angeben.
+    </small></p>
+
+</section> 
+			    <section>
+    <h3>@keyframes</h3>
+    
+
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes2"></i>
+    </div>
+	    
+    <pre><code class="hljs css" data-trim>
+@keyframes keyframes2 {
+    0% {
+	top: 0px;
+    }
+    10% {
+	top: 400px;
+    }
+    90% {
+	top: 500px;
+    }
+    100% {
+	top: 900px;
+    }
+}	
+</code></pre>
+    <p style="text-align: left;"><small>
+	    Statt der Schlüsselworte "from" und "to"  kann man auch die Prozentwerte der Strecke angeben.
+    </small></p>
+
+</section> 
+	<section>
+    <h3>@keyframes</h3>
+    
+
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes3"></i>
+    </div>
+	    
+    <pre><code class="hljs css" data-trim>
+@keyframes keyframes3 {
+    0% {
+	top: 0px;
+	opacity: 0.2;
+	
+    }
+    50% {
+	top: 400px;
+	opacity: 1;
+    }
+    100% {
+	top: 900px;
+	opacity: 0.2;
+    }	
+}
+</code></pre>
+    <p style="text-align: left;"><small>
+	   Neben der POsition können wir auch andere Attribute ändern. Beispielsweise die Opacity.
+    </small></p>
+
+</section> 
+			    <section>
+    <h3>@keyframes</h3>
+    
+
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes4"></i>
+    </div>
+	    
+    <pre><code class="hljs css" data-trim>
+@keyframes keyframes4 {
+    0% {
+	top: 0px;
+	opacity: 0.2;
+	transform: translateX(-80px);    
+    }
+    25% {
+	transform: translateX(40px);
+    }
+    50% {
+	opacity: 1;
+	transform: translateX(-80px);    
+    }
+    75% {
+	transform: translateX(40px);
+    }
+    100% {
+	top: 1000px;
+	opacity: 0.2;
+	transform: translateX(-80px);
+    }	
+}
+</code></pre>
+    <p style="text-align: left;"><small>
+	   Und wir können auch die Position in einer anderen Dimension verschieben.
+    </small></p>
+
+</section> 
+<section>
+    <h3>@keyframes</h3>
+    
+
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes5"></i>
+    </div>
+	    
+    <pre><code class="hljs css" data-trim>
+@keyframes keyframes5 {
+0% {
+	transform: translateX(-80px) translateY(0px);    
+    }
+    50% {
+	transform: translateX(40px) translateY(500px);    
+    }
+    100% {
+	transform: translateX(-80px) translateY(1000px);
+    }		
+}
+</code></pre>
+    <p style="text-align: left;"><small>
+	    Um die verschiedenen Transformationen zusammenzufassen, wird transform auch für die Y Koordinate verwendet.
+    </small></p>
+
+</section> 			    
+<section>
+    <h3>@keyframes</h3>
+    
+
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes6"></i>
+    </div>
+	    
+    <pre><code class="hljs css" data-trim>
+@keyframes keyframes6 {
+    0% {
+	transform: translateX(-80px) translateY(0px) rotate(0deg) scale(0.5, 0.5);
+    }
+    50% {
+	transform: translateX(40px) translateY(500px) rotate(60deg) scale(0.6, 0.6);;    
+    }
+    100% {
+	transform: translateX(-280px)  translateY(1000px) rotate(-360deg) scale(1.4, 1.4);
+    }		
+}
+</code></pre>
+    <p style="text-align: left;"><small>
+	    Machen wir das ganze etwas interessanter...
+    </small></p>
+
+</section> 			    
+			    
+<section>
+    <h3> animation-timing-function</h3>
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes7"></i>
+    </div>
+   <pre><code class="hljs css" data-trim>
+   animation-timing-function: ease-in-out;
+</code></pre>
+    <p>
+	Mögliche Werte: 	
+	ease, linear , ease-in , ease-out, ease-in-out, 
+	step-start, step-end, steps( X, start|end) 
+	cubic-bezier(x1, y1, x2, y2)
+    </p>
+</section> 
+<section>
+    <h3>   animation-iteration-count</h3>
+    <div class="flakes" style="margin-top: -200px; text-align: right;">
+     <i class="smallflake snowflake2" id="keyframes8"></i>
+    </div>
+   <pre><code class="hljs css" data-trim>
+.snowflake {
+   animation-iteration-count: 2;
+}
+</code></pre>
+    <p>
+	Mögliche Werte: 	
+	infinite, <em>n</em>
+	
+    </p>
+</section> 		    
+
+<section>
+    <h2>Snowflakes</h2>
+    <div class="snowflakes">
+	<i class="smallflake snowflake2" id="keyframes9"></i>
+	<i class="smallflake snowflake3" id="keyframes7"></i>
+	<i class="smallflake snowflake1" id="keyframes6"></i>
+	<i class="smallflake star" id="keyframes6"></i>
+	<i class="smallflake circle" id="keyframes9"></i>
+	<i class="smallflake snowflake2" id="keyframes8"></i>
+	<i class="smallflake snowflake1" id="keyframes7"></i>
+	<i class="smallflake snowflake3" id="keyframes9"></i>
+	<i class="smallflake star" id="keyframes9"></i>
+    </div>
+   <pre><code class="hljs html" data-trim>
+&lt;div class="snowflakes"&gt;
+	&lt;i class="smallflake snowflake2" id="keyframes9"&gt;&lt;/i&gt;
+	&lt;i class="smallflake snowflake3" id="keyframes7"&gt;&lt;/i&gt;
+	&lt;i class="smallflake snowflake1" id="keyframes6"&gt;&lt;/i&gt;
+	&lt;i class="smallflake star" id="keyframes6"&gt;&lt;/i&gt;
+	&lt;i class="smallflake circle" id="keyframes9"&gt;&lt;/i&gt;
+	&lt;i class="smallflake snowflake2" id="keyframes8"&gt;&lt;/i&gt;
+	&lt;i class="smallflake snowflake1" id="keyframes7"&gt;&lt;/i&gt;
+	&lt;i class="smallflake snowflake3" id="keyframes9"&gt;&lt;/i&gt;
+	&lt;i class="smallflake star" id="keyframes9"&gt;&lt;/i&gt;
+&lt;/div&gt;
+&ltstyle&gt;
+.snowflake {
+    animation-name: falling;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+&lt;/style&gt;
+</code></pre>
+    <p>
+Um es zusammen zu führen...
+    </p>
+     <p class="fragment">
+Aber es fehlt noch an Varianz... </p>
+</section> 		    
+
+<section>
+    <h2>Selectoren</h2>
+    <p>
+	Selektoren definieren, auf welche Elemente eine Reihe von CSS Regeln angewendet wird.
+	
+    </p>
+
+  
+</section> 
+		
+
+<section style="text-align: left; font-size: 0.9em;">
+    <h3>:nth-child(an+b)</h3>
+
+   <pre><code class="hljs css" data-trim>
+	element:nth-child(an + b) { style properties }
+</code></pre>	
+    <ul>
+	<li> 1n+0, oder einfach n, trifft auf jedes Kindelement zu.</li>
+   <li> 2n+0, oder einfach 2n, würde auf die Kindelemente 2, 4, 6, 8, etc. zutreffen. Hier kann auch einfach das Schlüsselwort even verwendet werden.</li>
+   <li> 2n+1 würde auf die Elemente 1, 3, 5, 7, etc. zutreffen. Hier gibt es auch eine Kurzform: Das Schlüsselwort odd.</li>
+   <li>  3n+4 würde auf die folgenden Elemente zutreffen: 4, 7, 10, 13, etc.</li>
+
+    </ul>
+
+    <p>
+	Weiterlesen: <a href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_Selectors">MDN: CSS Selectors</a>
+    </p>
+</section> 
+
+			    
+<section>
+    <h2>:nth-child() erstmal einfach</h2>
+    <div class="snowflakes" style="left: 50%;">
+	<i class="smallflake snowflake2" id="keyframes7" style="animation-duration: 5s;"></i>
+	<i class="smallflake snowflake3" id="keyframes7" style="animation-duration: 10s;"></i>
+	<i class="smallflake snowflake1" id="keyframes7" style="animation-duration: 15s;"></i>
+    </div>
+   <pre><code class="hljs css" data-trim>
+i {
+    animation-duration: 5s;
+}
+i:nth-child(2) {
+    animation-duration: 10s;
+}
+i:nth-child(3) {
+    animation-duration: 15s;
+}
+</code></pre>
+</section> 		  
+			    			    
+<section>
+    <h2>:nth-child() dann mal richtig</h2>
+    
+   <pre><code class="hljs css" data-trim>
+i:nth-of-type(5n)    {height:30px; width:30px;}
+i:nth-of-type(5n+1)  {height:24px; width:24px;}
+i:nth-of-type(5n+2)  {height:10px; width:10px;}...
+
+i:nth-of-type(3n)    {animation-delay: 2.3s;}
+i:nth-of-type(3n+1)  {animation-delay: 1.5s;}
+i:nth-of-type(3n+2)  {animation-delay: 3.4s;}
+
+i:nth-of-type(7n)    {opacity: 0.5;}
+i:nth-of-type(7n+1)  {opacity: 0.8;}
+i:nth-of-type(7n+2)  {opacity: 0.3;} ...
+
+i:nth-of-type(11n) {animation-timing-function: ease-in-out;}
+i:nth-of-type(11n+1) {animation-timing-function:ease-out;}
+i:nth-of-type(11n+2) {animation-timing-function:ease;} ...
+i:nth-of-type(11n+5) {animation-timing-function:
+                         cubic-bezier(0.2, 0.3, 0.8, 0.9);}
+
+</code></pre>
+</section> 		  
+			    
+<section>
+    <h1>So let it snow</h1>
+   
+    <div class="snowstorm">
+<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+
+    </div>
+</section> 
+			    
+			    
+<section>
+	<h1>Frohe Weihnachten!</h1>
+	<h2>Und einen guten Rutsch ins neue Jahr 2020</h2>
+	<p></p>
+
+
+	<p style="font-size: 0.6em; ">
+	   Das Plugin "RRZE Let it snow" ist ab sofort für alle Webauftritte auf dem CMS Angebot des RRZE aktivierbar.
+	</p>
+	<p style="margin-top: 1em; font-size: 0.5em; ">    
+	  Vortrag inspiriert von  Estelle Weyl (Standardista.com, @estellevw). 
+	  <br>HTML Slides made with reveal.js, created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a>
+	</p> 
+
+</section>
 				
 			</div>
 
